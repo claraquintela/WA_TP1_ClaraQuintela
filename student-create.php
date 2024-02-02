@@ -21,31 +21,31 @@
             <a href="student-create.php">
                 <li>Create your account</li>
             </a>
-            <a href="student-show.php">
-                <li>List des élèves</li>
-            </a>
+
         </ul>
 
     </header>
 
     <div class="container">
-        <h2>Crée votre compte</h2>
+        <h2>Create your account</h2>
 
-        <form action="assets\php\student-store.php" method="post">
-            <label> Nom
-                <input type="text" name="name">
-            </label>
-            <label>Email
-                <input type="email" name="email">
-            </label>
-            <label>Date de naissance
-                <input type="date" name="birthday">
-            </label>
+        <div class="student-create">
+            <form action="assets\php\student-store.php" method="post">
+                <label> Nom
+                    <input type="text" name="name">
+                </label>
+                <label>Email
+                    <input type="email" name="email">
+                </label>
+                <label>Birthday
+                    <input type="date" name="birthday">
+                </label>
 
-            <label>
-                <input type="submit" class="btn" value="Save">
-            </label>
-        </form>
+                <label>
+                    <input type="submit" class="btn" value="Save">
+                </label>
+            </form>
+        </div>
     </div>
 </body>
 

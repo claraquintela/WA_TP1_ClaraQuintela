@@ -33,30 +33,32 @@ if (isset($_GET['id']) && $_GET['id'] != null) {
             <a href="student-create.php">
                 <li>Create your account</li>
             </a>
-            <a href="student-show.php">
-                <li>List des élèves</li>
-            </a>
         </ul>
 
     </header>
 
     <div class="container">
 
-        <h2>Student list</h2>
-        <hr>
-        <p><strong>Name: </strong><?= $name; ?></p>
-        <p><strong>E-mail: </strong><?= $email ?></p>
-        <p><strong>Birthday: </strong><?= $birthday ?></p>
 
-        <div>
-            <a href="index.php" class="btn">Home</a>
-            <a href="student-edit.php?id=<?= $id ?>" class="btn">Edit</a>
+        <h2>Student list</h2>
+
+        <div class="student-edit">
+            <p><strong>Name: </strong><?= $name; ?></p>
+            <p><strong>E-mail: </strong><?= $email ?></p>
+            <p><strong>Birthday: </strong><?= $birthday ?></p>
+
+            <div class="div-btn">
+                <a href="index.php" class="btn">Home</a>
+                <a href="student-edit.php?id=<?= $id ?>" class="btn">Edit</a>
+
+
+            </div>
+
         </div>
 
-
-        <form action="student-delete.php" method="post">
+        <form action="assets/php/student-delete.php" method="post">
             <input type="hidden" name="id" value="<?= $id; ?>">
-            <button class="btn red"> Delete</button>
+            <button class="btn">Delete this account?</button>
         </form>
 
     </div>

@@ -69,13 +69,13 @@ class CRUD extends PDO
 
         $count = $stmt->rowCount();
         if ($count == 1) {
-            header("location:" . $_SERVER['HTTP_REFERER']);
+            header("location:../../index.php");
         } else {
             print_r($stmt->errorInfo());
         }
     }
 
-    public function delete($table, $value, $url, $field = 'id')
+    public function delete($table, $value, $field = 'id')
     {
 
         $sql = "DELETE FROM $table WHERE $field = :$field";
@@ -86,7 +86,7 @@ class CRUD extends PDO
 
         $count = $stmt->rowCount();
         if ($count == 1) {
-            header("location:$url.php");
+            header("location:../../index.php");
         } else {
             print_r($stmt->errorInfo());
         }

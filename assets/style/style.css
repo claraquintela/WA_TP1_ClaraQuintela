@@ -1,9 +1,19 @@
 body {
     background-color: #f6f6f5;
+    margin: 1rem;
 }
+
 
 header{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -14,15 +24,106 @@ h1, h2, h3 {
 
 ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
   }
   
   li {
     display: inline-block;
     margin-right: 10px; 
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6rem;
   }
 
 .logo {
     border-radius: 100%;
-    width: 20rem;
+    width: 18rem;
 }
+
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    max-width: fit-content;
+}
+
+td,th {
+    padding: 1rem;
+    border: 1px dotted black;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    max-width: fit-content;
+}
+
+input{
+    margin: 1rem;;
+}
+
+.student-edit, .student-create, .student-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: fit-content;
+    border: 1px dotted rgb(234, 103, 177);
+    padding: 1rem;
+    margin: 1rem;;
+}
+
+
+.student-create {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.div-btn {
+    display: flex;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+max-width: fit-content;
+margin: 1.5rem;
+background: linear-gradient(90deg, #e68609 0%, #d6c05d 100%);
+padding: 10px 30px;
+border: 2px solid #da6bc9;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+
 

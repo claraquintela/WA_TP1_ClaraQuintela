@@ -29,10 +29,6 @@ $select = $crud->select('students', 'name', 'asc');
             <a href="student-create.php">
                 <li>Create your account</li>
             </a>
-
-            <a href="student-show.php">
-                <li>List des élèves</li>
-            </a>
         </ul>
     </header>
 
